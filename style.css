@@ -1,0 +1,168 @@
+:root {
+    --dark-cyan:  hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    margin: 0;
+    background-color: var(--cream);
+}
+
+h2, h3 {
+    margin: 0;
+    font-family: 'Fraunces', serif;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: var(--dark-cyan);
+    padding-bottom: 25px;
+}
+
+h3 {
+    margin: 0;
+    padding-bottom: 25px;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+@media screen and (max-width : 376px) {
+    p, h2, h3 {
+        padding-bottom: 15px;
+    }
+}
+
+h5, h6, p {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-grayish-blue);
+}
+
+h5 {
+    padding-top: 30px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+@media screen and (max-width : 376px) {
+    h5 {
+        padding-top: 20px;
+    }
+}
+
+p {
+    padding-bottom: 25px;
+    font-size: 0.875rem;
+    line-height: 1.7;
+}
+
+h6 {
+    padding: 10px 15px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0% 30%;
+}
+
+@media screen and (max-width : 376px) {
+    .container {
+        padding: 8% 5%;
+    }
+}
+
+.card {
+    margin: 0;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+    justify-content: center;
+}
+
+@media screen and (max-width : 376px) {
+    .card {
+        flex-direction: column;
+    }
+}
+
+.card-right {
+    margin: 0;
+    padding: 0px 30px;
+}
+
+@media screen and (max-width : 376px) {
+    .card-right {
+        padding: 0px 25px;
+    }
+}
+
+.images-desktop {
+    width: 300px;
+    height: auto;
+    display: block;
+    border-radius: 10px 0px 0px 10px;
+}
+
+@media screen and (max-width : 376px) {
+    .images-desktop {
+        content: url(./images/image-product-mobile.jpg);
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+.price {
+    display: flex;
+}
+
+.cart-button {
+    width: 100%;
+    padding: 10px 0px;
+    background-color: var(--dark-cyan);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width : 376px) {
+    .cart-button {
+        margin-bottom: 25px;
+    }
+}
+
+.cart-button p {
+    font-weight: 700;
+    padding-bottom: 0px;
+    color: var(--white);
+}
+
+.cart-button:hover {
+    background-color: var(--very-dark-blue);
+    cursor: pointer;
+}
+
+.cart-icon {
+    width: 16px;
+    height: 18px;
+    padding-top: 3px;
+    padding-right: 10px;
+}
+
+.attribution {
+    text-align: center;
+}
+
+
